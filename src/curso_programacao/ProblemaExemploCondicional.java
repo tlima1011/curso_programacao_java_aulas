@@ -10,14 +10,11 @@ public class ProblemaExemploCondicional {
 		Locale.setDefault(Locale.US); 
 		Scanner sc = new Scanner(System.in); 
 		
-		int diferenca = 0; 
 		double valor = 50.0; 
 		int minutos = sc.nextInt(); 
 		
-		if(minutos > 100) { 
-			diferenca = minutos - 100; 
-			valor += (diferenca * 2.0); 
-		}
+		valor = (minutos > 100) ? valor += (minutos - 100) * 2.0 : 50.00; 
+		
 		System.out.printf("Valor a pagar: R$ %.2f%n", valor);
 		sc.close();
 	}
