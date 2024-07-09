@@ -15,7 +15,7 @@ public class Condicional3 {
 		if(a < b && a < c) { 
 			System.out.printf("MENOR A = %d",a);
 		}
-		else if(b < c && b < a) { 
+		else if(b < c) { 
 			System.out.printf("MENOR B = %d",b);
 		}else { 
 			System.out.printf("MENOR C = %d",c);
