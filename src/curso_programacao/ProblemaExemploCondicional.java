@@ -10,10 +10,10 @@ public class ProblemaExemploCondicional {
 		Locale.setDefault(Locale.US); 
 		Scanner sc = new Scanner(System.in); 
 		
-		double valor = 50.0; 
+		double valor = 50.00;
 		int minutos = sc.nextInt(); 
 		
-		valor = (minutos > 100) ? valor += (minutos - 100) * 2.0 : 50.00; 
+		valor = (minutos > 100) ? valor += (minutos - 100) * 2.0 : valor; 
 		
 		System.out.printf("Valor a pagar: R$ %.2f%n", valor);
 		sc.close();
