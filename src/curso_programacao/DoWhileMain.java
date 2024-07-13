@@ -19,7 +19,7 @@ public class DoWhileMain {
 			System.out.printf("Equivalente em Fahrenheit: %.1f\n", f);
 			System.out.print("Deseja repetir (s/n)? ");
 			repetir = sc.next().charAt(0);
-		}while(repetir.equals('s')); 
+		}while(repetir == 's' || repetir == 'S'); 
 		
 		sc.close();
 	}
