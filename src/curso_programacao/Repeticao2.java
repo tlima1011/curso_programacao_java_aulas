@@ -12,21 +12,23 @@ public class Repeticao2 {
 		
 		double s = 0.0, m = 0.0; 
 		int c = 0; 
-		int n = sc.nextInt(); 
+		int idade = sc.nextInt(); 
 		
-		if(n < 0) { 
-			System.out.println("Impossivel calcular");
-		} 
-		while (n != 0) {
-			if (n < 0) {
-				break;
-			}
-			s += n;
-			n = sc.nextInt();
-			c++;
+		while (idade >= 0) {
+			s += idade; 
+			c = c + 1; 
+			idade = sc.nextInt();
 		}
-		m = s / (double) c;
-		System.out.printf("%.2f%n", m);	
+		
+		if(c > 0) { 
+			m = s / (double) c;
+			System.out.printf("%.2f%n", m);	
+		}
+		else {
+			System.out.println("Impossivel calcular");
+		}
+		
+		
 
 		sc.close();
 	}
