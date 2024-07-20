@@ -36,6 +36,12 @@ public class MainVet3 {
 		
 		System.out.printf("Altura média: %.2f%n", media);  
 		System.out.printf("Pessoas com menos de 16 anos: %.1f%%", x); 
+		System.out.println("\nRelação de nomes:");
+		
+		for(String s: nome) { 
+			System.out.println(s);
+		}
+		
 		
 		sc.close();
 		
