@@ -21,10 +21,14 @@ public class MainVet1 {
 				System.out.printf("%d%n",vet[i]);
 			}
 		}
-		
+		System.out.println("Com For-each");
+		//Alternativo com for-each 
+		for(int v : vet) { 
+			if(v < 0) {
+				System.out.printf("%d%n",v);
+			}
+		}
 		
 		sc.close();
-
 	}
-
 }
